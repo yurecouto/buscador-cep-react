@@ -55,8 +55,19 @@ function App() {
           <FiSearch size={25} color="#FFF"/>
         </button>
       </div>
+      
 
-      {Object.keys(cep).length > 0 && (
+      {cep.erro === true && (
+
+        //RENDERIZAÇÃO CONDICIONAL
+        <main className="main-error">
+
+          <h2>CEP Não Encontrado.</h2>
+
+        </main>
+      )}
+
+      {cep.cep != null && (
 
         //RENDERIZAÇÃO CONDICIONAL
         <main className="main">
@@ -67,6 +78,8 @@ function App() {
           <span>Localidade: {cep.localidade}, {cep.uf}</span><br/>
         </main>
       )}
+
+
 
     </div>
   );

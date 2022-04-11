@@ -68,6 +68,22 @@
     font-size: 39px;
 }
 
+.main-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 50, 50);
+    color: #FFF;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.main-error h2{
+    margin: 16px 0;
+    font-size: 39px;
+}
+
 .main span{
     margin-bottom: 16px;
     font-weight: bold;
